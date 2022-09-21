@@ -2,11 +2,16 @@
     body {
         font-size: 10pt;
         font-family: arial, sans-serif;
+        background-color: blueviolet;
     }
 
     a {
         text-decoration: none;
 
+    }
+    
+    .younead-logo {
+        color: aqua;
     }
 
     a:hover {
@@ -186,15 +191,14 @@ background-size: 4.25%;*/
 </div>
 <div class="search">
     <div class="logo">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
-        <img src="../images/alkemia.jpeg"/>
+        <h1 class="younead-logo">Younead Search</h1>
     </div>
     <form method="POST" action="search">
         {% csrf_token %}
         <input class="search-bar" type="text" name="search" autofocus x-webkit-speech />
         <div class="search-nav">
             <div class="search-button">
-                <a href="#"><button type="submit">Google Search</button></a>
+                <a href="#"><button type="submit">Younead Search</button></a>
     </form>
     <a href="#"><button>I'm Feeling Lucky</button></a>
 </div>
