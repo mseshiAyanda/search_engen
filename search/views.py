@@ -3,11 +3,13 @@ from django.urls import path
 import requests
 from . import views
 from bs4 import BeautifulSoup as bs
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
 
+@csrf_exempt
 def search(request):
     if request.method == 'POST':
         search = request.POST['search']
